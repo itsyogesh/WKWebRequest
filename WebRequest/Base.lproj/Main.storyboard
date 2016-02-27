@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="WebRequest" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +17,63 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="S5I-Vw-Rpg">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="560"/>
+                                <color key="backgroundColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6TQ-iT-xMr">
+                                <rect key="frame" x="20" y="568" width="35" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="35" id="b95-uq-NQv"/>
+                                    <constraint firstAttribute="height" constant="30" id="o1R-Sn-nSi"/>
+                                </constraints>
+                                <state key="normal" title="Swift"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="10R-Sx-Yl0">
+                                <rect key="frame" x="281" y="570" width="39" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="39" id="GlF-YV-CDb"/>
+                                    <constraint firstAttribute="height" constant="30" id="yeS-Jo-HMq"/>
+                                </constraints>
+                                <state key="normal" title="Steak"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DQf-Gr-deN">
+                                <rect key="frame" x="532" y="570" width="48" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="V5t-zj-Ipz"/>
+                                    <constraint firstAttribute="width" constant="48" id="vqW-c6-AAs"/>
+                                </constraints>
+                                <state key="normal" title="Gossip"/>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="S5I-Vw-Rpg" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="3VJ-74-LEC"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="S5I-Vw-Rpg" secondAttribute="bottom" constant="40" id="BFK-MJ-6Yg"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="DQf-Gr-deN" secondAttribute="trailing" id="Dk8-VT-RN9"/>
+                            <constraint firstItem="10R-Sx-Yl0" firstAttribute="top" secondItem="S5I-Vw-Rpg" secondAttribute="bottom" constant="10" id="HKk-az-r7J"/>
+                            <constraint firstItem="10R-Sx-Yl0" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="YtN-vM-6k5"/>
+                            <constraint firstItem="DQf-Gr-deN" firstAttribute="top" secondItem="S5I-Vw-Rpg" secondAttribute="bottom" constant="10" id="aQ6-9Z-YRh"/>
+                            <constraint firstItem="6TQ-iT-xMr" firstAttribute="top" secondItem="S5I-Vw-Rpg" secondAttribute="bottom" constant="8" id="ajG-Oc-uhF"/>
+                            <constraint firstItem="6TQ-iT-xMr" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="fWz-NK-Wau"/>
+                            <constraint firstAttribute="trailing" secondItem="S5I-Vw-Rpg" secondAttribute="trailing" id="h0x-7U-CkW"/>
+                            <constraint firstItem="S5I-Vw-Rpg" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="iG1-Py-UpX"/>
+                            <constraint firstItem="10R-Sx-Yl0" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="kgS-YI-ETv"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="YtN-vM-6k5"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <connections>
+                        <outlet property="container" destination="S5I-Vw-Rpg" id="i7a-av-eLP"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="245" y="337"/>
         </scene>
     </scenes>
 </document>
