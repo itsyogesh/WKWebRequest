@@ -27,18 +27,25 @@ class ViewController: UIViewController {
         webView.frame = frame
         
         let urlStr = "https://developer.apple.com/swift/blog"
-        let url = NSURL(string: urlStr)!
-        
+        loadRequest(urlStr)
+    }
+    
+    func loadRequest(urlString: String){
+        let url = NSURL(string: urlString)!
         let request = NSURLRequest(URL: url)
-        
         webView.loadRequest(request)
     }
     
     @IBAction func loadSwift(sender: AnyObject){
-        
+        loadRequest("https://developer.apple.com/swift/blog")
     }
     
     @IBAction func loadGossip(sender: AnyObject){
+        loadRequest("https://tmz.com")
+    }
+    
+    @IBAction func loadSteak(sender: AnyObject){
+        loadRequest("https://google.com/")
     }
     
     override func didReceiveMemoryWarning() {

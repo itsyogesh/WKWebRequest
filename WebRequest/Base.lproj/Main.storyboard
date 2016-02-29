@@ -29,6 +29,9 @@
                                     <constraint firstAttribute="height" constant="30" id="o1R-Sn-nSi"/>
                                 </constraints>
                                 <state key="normal" title="Swift"/>
+                                <connections>
+                                    <action selector="loadSwift:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cyL-Uv-YlE"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="10R-Sx-Yl0">
                                 <rect key="frame" x="281" y="570" width="39" height="30"/>
@@ -37,6 +40,9 @@
                                     <constraint firstAttribute="height" constant="30" id="yeS-Jo-HMq"/>
                                 </constraints>
                                 <state key="normal" title="Steak"/>
+                                <connections>
+                                    <action selector="loadSteak:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xkE-2c-lOT"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DQf-Gr-deN">
                                 <rect key="frame" x="532" y="570" width="48" height="30"/>
@@ -45,6 +51,9 @@
                                     <constraint firstAttribute="width" constant="48" id="vqW-c6-AAs"/>
                                 </constraints>
                                 <state key="normal" title="Gossip"/>
+                                <connections>
+                                    <action selector="loadGossip:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BsB-Pb-eae"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
